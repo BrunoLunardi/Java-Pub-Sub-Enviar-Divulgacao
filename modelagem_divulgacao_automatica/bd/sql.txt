@@ -1,0 +1,8 @@
+--user
+create table user (id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, login VARCHAR(45), senha varchar(45));
+
+--tópicos
+create table topicos (id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, topico VARCHAR(100));
+
+--user_has_topicos
+create table user_has_topicos (id_user INT, id_topico INT, primary key (id_user, id_topico));
